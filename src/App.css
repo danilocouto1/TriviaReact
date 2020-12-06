@@ -1,0 +1,101 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.red-border {
+  border: 1px solid red;
+}
+
+.green-border {
+  border: 1px solid green;
+}
+
+.login-form {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 1em;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+
+.login-form button {
+  background-color: rgb(6, 17, 51);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1em;
+  margin: 0 4px;
+  padding: 6px 12px;
+}
+
+.login-form button:hover {
+  background-color: rgb(8, 25, 77);
+}
+
+.login-form button:active {
+  background-color: rgb(33, 51, 107);
+}
+
+.login-form button:disabled {
+  background-color: rgb(55, 62, 70);
+}
+
+.login-form label {
+  border: 0;
+  color: white;
+  margin: 0 4px;
+  padding: 6px 12px;
+}
+
+.login-form input {
+  border: 0;
+  border-radius: 5px;
+  margin: 0 8px;
+  padding: 6px 12px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: shake infinite 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
